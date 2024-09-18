@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris S. Wion Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="school-image.jpg" alt="Chris S. Wion Academy" class="header-image">
+        <h1>Chris S. Wion Academy</h1>
+        <p>Located in Cooper Farm Community, Rehab, Paynesville City</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#apply-student">Student Application</a></li>
+            <li><a href="#apply-teacher">Teacher Application</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Chris S. Wion Academy. Our vision is to empower future generations with the knowledge and skills they need to succeed. Our objectives include fostering a supportive learning environment and encouraging leadership and innovation. Our goal is to prepare students to become influential leaders and responsible citizens.</p>
+        <p><strong>Vision:</strong> To be a leading institution in education and character development.</p>
+        <p><strong>Objectives:</strong> Provide high-quality education, foster personal growth, and encourage community involvement.</p>
+        <p><strong>Goals:</strong> Develop future leaders who are knowledgeable, ethical, and committed to making a positive impact.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@chriswionacademy.com">info@chriswionacademy.com</a></p>
+        <p>Contact Numbers: +231 776 012 136, +231 881 149 755</p>
+        <p>WhatsApp: <a href="https://wa.me/+231776012136">Chat with us</a></p>
+        <p>YouTube: <a href="https://youtube.com/chriswionacademy">Watch our videos</a></p>
+        <p>Facebook: <a href="https://facebook.com/chriswionacademy">Follow us</a></p>
+        <p>Twitter: <a href="https://twitter.com/chriswionacademy">Follow us</a></p>
+    </section>
+
+    <section id="apply-student">
+        <h2>Student Application Form</h2>
+        <form id="student-form" action="submit-student-application.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required>
+                
+                <label for="middle-name">Middle Name:</label>
+                <input type="text" id="middle-name" name="middle_name">
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required>
+                
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" required>
+                
+                <label for="county">County of Origin:</label>
+                <input type="text" id="county" name="county" required>
+                
+                <label for="religion">Religion:</label>
+                <input type="text" id="religion" name="religion" required>
+                
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact_number" required>
+                
+                <label for="home-address">Home Address:</label>
+                <input type="text" id="home-address" name="home_address" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="pob">Place of Birth:</label>
+                <input type="text" id="pob" name="pob" required>
+                
+                <label for="last-school">Last School Attended:</label>
+                <input type="text" id="last-school" name="last_school" required>
+                
+                <label for="past-school-docs">Upload Documents from Past School (PDF):</label>
+                <input type="file" id="past-school-docs" name="past_school_docs" accept=".pdf">
+                
+                <label for="passport-photo">Upload Passport Size Photo (JPG):</label>
+                <input type="file" id="passport-photo" name="passport_photo" accept=".jpg">
+                
+                <label for="transcript">Upload Transcript from Past School (PDF):</label>
+                <input type="file" id="transcript" name="transcript" accept=".pdf">
+                
+                <label for="parent-name">Parent(s)/Guardian(s) Name:</label>
+                <input type="text" id="parent-name" name="parent_name" required>
+                
+                <label for="parent-address">Parent/Guardian Home Address:</label>
+                <input type="text" id="parent-address" name="parent_address" required>
+                
+                <label for="parent-occupation">Parent/Guardian Occupation:</label>
+                <input type="text" id="parent-occupation" name="parent_occupation" required>
+                
+                <label for="parent-contact">Parent/Guardian Contact Numbers:</label>
+                <input type="tel" id="parent-contact" name="parent_contact" required>
+                
+                <label for="reason-student">In less than 150 words, why do you want to enroll in our Institution?</label>
+                <textarea id="reason-student" name="reason_student" rows="4" required></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="apply-teacher">
+        <h2>Teacher Application Form</h2>
+        <form id="teacher-form" action="submit-teacher-application.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name-teacher">First Name:</label>
+                <input type="text" id="first-name-teacher" name="first_name" required>
+                
+                <label for="middle-name-teacher">Middle Name:</label>
+                <input type="text" id="middle-name-teacher" name="middle_name">
+                
+                <label for="last-name-teacher">Last Name:</label>
+                <input type="text" id="last-name-teacher" name="last_name" required>
+                
+                <label for="education">Level of Education:</label>
+                <input type="text" id="education" name="education" required>
+                
+                <label for="religion-teacher">Religion:</label>
+                <input type="text" id="religion-teacher" name="religion" required>
+                
+                <label for="nationality-teacher">Nationality:</label>
+                <input type="text" id="nationality-teacher" name="nationality" required>
+                
+                <label for="county-teacher">County of Origin:</label>
+                <input type="text" id="county-teacher" name="county" required>
+                
+                <label for="gender-teacher">Gender:</label>
+                <select id="gender-teacher" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="marital-status">Marital Status:</label>
+                <input type="text" id="marital-status" name="marital_status" required>
+                
+                <label for="dob-teacher">Date of Birth:</label>
+                <input type="date" id="dob-teacher" name="dob" required>
+                
+                <label for="pob-teacher">Place of Birth:</label>
+                <input type="text" id="pob-teacher" name="pob" required>
+                
+                <label for="political-affiliation">Political Affiliation:</label>
+                <input type="text" id="political-affiliation" name="political_affiliation" required>
+                
+                <label for="home-address-teacher">Home Address:</label>
+                <input type="text" id="home-address-teacher" name="home_address" required>
+                
+                <label for="email-teacher">Email Address:</label>
+                <input type="email" id="email-teacher" name="email" required>
+                
+                <label for="experience">Years of Work Experience:</label>
+                <input type="number" id="experience" name="experience" required>
+                
+                <label for="contact-number-teacher">Contact Numbers:</label>
+                <input type="tel" id="contact-number-teacher" name="contact_number" required>
+                
+                <label for="degree">Upload Degree/Diploma (PDF):</label>
+                <input type="file" id="degree" name="degree" accept=".pdf">
+                
+                <label for="cv">Upload CV (PDF):</label>
+                <input type="file" id="cv" name="cv" accept=".pdf">
+                
+                <label for="passport-photo-teacher">Upload Passport Size Photo (JPG):</label>
+                <input type="file" id="passport-photo-teacher" name="passport_photo" accept=".jpg">
+                
+                <label for="emergency-contact">Name of Emergency Contact Person:</label>
+                <input type="text" id="emergency-contact" name="emergency_contact" required>
+                
+                <label for="emergency-contact-number">Emergency Contact Numbers:</label>
+                <input type="tel" id="emergency-contact-number" name="emergency_contact_number" required>
+                
+                <label for="reason-teacher">In less than 250 words, why do you want to teach in our Institution?</label>
+                <textarea id="reason-teacher" name="reason_teacher" rows="6" required></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
